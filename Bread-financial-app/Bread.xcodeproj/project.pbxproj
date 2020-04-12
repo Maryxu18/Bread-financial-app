@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2404611D9851C9991617CC66 /* Pods_Bread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81F6C6362A44567372CD3A7 /* Pods_Bread.framework */; };
 		3702E6412404BC4D00436253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3702E6402404BC4D00436253 /* AppDelegate.swift */; };
 		3702E6432404BC4D00436253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3702E6422404BC4D00436253 /* SceneDelegate.swift */; };
 		3702E6452404BC4D00436253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3702E6442404BC4D00436253 /* ViewController.swift */; };
@@ -14,11 +15,10 @@
 		3702E64A2404BC4E00436253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3702E6492404BC4E00436253 /* Assets.xcassets */; };
 		3702E64D2404BC4E00436253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3702E64B2404BC4E00436253 /* LaunchScreen.storyboard */; };
 		3702E6552404BDA700436253 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3702E6542404BDA700436253 /* GoogleService-Info.plist */; };
-		AFA7A76FA226ADD157EA851F /* Pods_Bread_financial_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EDB26F62564F518B9AE986 /* Pods_Bread_financial_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3702E63D2404BC4D00436253 /* Bread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bread.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3702E63D2404BC4D00436253 /* Bread-financial-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bread-financial-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3702E6402404BC4D00436253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3702E6422404BC4D00436253 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3702E6442404BC4D00436253 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,9 +27,12 @@
 		3702E64C2404BC4E00436253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3702E64E2404BC4E00436253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3702E6542404BDA700436253 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37DE04C92443914300FEB1D1 /* Bread copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Bread copy-Info.plist"; path = "/Users/amanda/Documents/Bread-financial-app/Bread-financial-app/Bread copy-Info.plist"; sourceTree = "<absolute>"; };
 		3D15D37CD39902E9B30312F5 /* Pods-Bread-financial-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bread-financial-app.release.xcconfig"; path = "Target Support Files/Pods-Bread-financial-app/Pods-Bread-financial-app.release.xcconfig"; sourceTree = "<group>"; };
 		73F2374C397AF8F35FF8C518 /* Pods-Bread-financial-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bread-financial-app.debug.xcconfig"; path = "Target Support Files/Pods-Bread-financial-app/Pods-Bread-financial-app.debug.xcconfig"; sourceTree = "<group>"; };
-		D1EDB26F62564F518B9AE986 /* Pods_Bread_financial_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bread_financial_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A39F8CAE95ACE50DC60A086 /* Pods-Bread.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bread.release.xcconfig"; path = "Target Support Files/Pods-Bread/Pods-Bread.release.xcconfig"; sourceTree = "<group>"; };
+		9F1ACC6501F8C314046BBE90 /* Pods-Bread.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bread.debug.xcconfig"; path = "Target Support Files/Pods-Bread/Pods-Bread.debug.xcconfig"; sourceTree = "<group>"; };
+		A81F6C6362A44567372CD3A7 /* Pods_Bread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA7A76FA226ADD157EA851F /* Pods_Bread_financial_app.framework in Frameworks */,
+				2404611D9851C9991617CC66 /* Pods_Bread.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +52,8 @@
 			children = (
 				73F2374C397AF8F35FF8C518 /* Pods-Bread-financial-app.debug.xcconfig */,
 				3D15D37CD39902E9B30312F5 /* Pods-Bread-financial-app.release.xcconfig */,
+				9F1ACC6501F8C314046BBE90 /* Pods-Bread.debug.xcconfig */,
+				8A39F8CAE95ACE50DC60A086 /* Pods-Bread.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -60,13 +65,14 @@
 				3702E63E2404BC4D00436253 /* Products */,
 				0FD2389A458014802D9929EA /* Pods */,
 				8F485311ABB082C0EC8EFF60 /* Frameworks */,
+				37DE04C92443914300FEB1D1 /* Bread copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		3702E63E2404BC4D00436253 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3702E63D2404BC4D00436253 /* Bread.app */,
+				3702E63D2404BC4D00436253 /* Bread-financial-app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,7 +95,7 @@
 		8F485311ABB082C0EC8EFF60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1EDB26F62564F518B9AE986 /* Pods_Bread_financial_app.framework */,
+				A81F6C6362A44567372CD3A7 /* Pods_Bread.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,7 +119,7 @@
 			);
 			name = Bread;
 			productName = "Bread-financial-app";
-			productReference = 3702E63D2404BC4D00436253 /* Bread.app */;
+			productReference = 3702E63D2404BC4D00436253 /* Bread-financial-app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,15 +176,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bread-financial-app/Pods-Bread-financial-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Bread/Pods-Bread-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bread-financial-app/Pods-Bread-financial-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Bread/Pods-Bread-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bread-financial-app/Pods-Bread-financial-app-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bread/Pods-Bread-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8B39E7C38FC41A0A292339B4 /* [CP] Check Pods Manifest.lock */ = {
@@ -196,7 +202,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bread-financial-app-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Bread-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -354,7 +360,7 @@
 		};
 		3702E6522404BC4E00436253 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73F2374C397AF8F35FF8C518 /* Pods-Bread-financial-app.debug.xcconfig */;
+			baseConfigurationReference = 9F1ACC6501F8C314046BBE90 /* Pods-Bread.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,7 +371,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amandaguo.Bread-financial-app";
-				PRODUCT_NAME = Bread;
+				PRODUCT_NAME = "Bread-financial-app";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,7 +379,7 @@
 		};
 		3702E6532404BC4E00436253 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D15D37CD39902E9B30312F5 /* Pods-Bread-financial-app.release.xcconfig */;
+			baseConfigurationReference = 8A39F8CAE95ACE50DC60A086 /* Pods-Bread.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amandaguo.Bread-financial-app";
-				PRODUCT_NAME = Bread;
+				PRODUCT_NAME = "Bread-financial-app";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
