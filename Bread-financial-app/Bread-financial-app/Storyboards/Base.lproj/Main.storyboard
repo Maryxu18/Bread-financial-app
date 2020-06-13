@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Bread_financial_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Bread_financial_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,7 @@
                                 <rect key="frame" x="65" y="528" width="125" height="30"/>
                                 <state key="normal" title="Forget Password?"/>
                                 <connections>
+                                    <action selector="onClickForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2M-p1-CL0"/>
                                     <segue destination="k3C-gF-ggw" kind="show" id="Gho-qq-Xdk"/>
                                 </connections>
                             </button>
@@ -56,14 +57,23 @@
                                     <action selector="onClickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5R-e3-uEh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar3-rC-n6E">
+                                <rect key="frame" x="100" y="607" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="pbx-DE-JJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="84x-R8-ef4"/>
                             <constraint firstItem="Qye-40-Uuc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="A2T-ZU-8UU"/>
                             <constraint firstItem="ivW-cS-ApM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="AmU-qB-YQb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ar3-rC-n6E" secondAttribute="bottom" constant="234" id="AmV-So-Sgd"/>
                             <constraint firstItem="ivW-cS-ApM" firstAttribute="top" secondItem="SMC-cp-wFf" secondAttribute="bottom" constant="15" id="HgV-0e-YIY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jj9-92-yV9" secondAttribute="bottom" constant="130" id="IXa-vk-1OO"/>
+                            <constraint firstItem="ar3-rC-n6E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="KhV-7V-caJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ar3-rC-n6E" secondAttribute="trailing" constant="100" id="Lk4-va-GKY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pbx-DE-JJ1" secondAttribute="bottom" constant="130" id="MOy-Es-c8l"/>
                             <constraint firstItem="ofO-gc-GzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="ODq-R7-RnQ"/>
                             <constraint firstItem="vGQ-ot-Buo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="Rb9-Nk-8I2"/>
@@ -71,6 +81,7 @@
                             <constraint firstItem="vGQ-ot-Buo" firstAttribute="top" secondItem="ofO-gc-GzA" secondAttribute="bottom" constant="46" id="eND-IV-MPn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vGQ-ot-Buo" secondAttribute="trailing" constant="65" id="guA-Hv-F7c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jj9-92-yV9" secondAttribute="trailing" constant="65" id="hYh-xd-bFy"/>
+                            <constraint firstItem="ar3-rC-n6E" firstAttribute="top" secondItem="ivW-cS-ApM" secondAttribute="bottom" constant="49" id="jq8-HP-4oV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ivW-cS-ApM" secondAttribute="trailing" constant="224" id="mgL-nT-hTq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qye-40-Uuc" secondAttribute="trailing" constant="87" id="nTT-pk-osH"/>
                             <constraint firstItem="Qye-40-Uuc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="ozC-0K-f91"/>
@@ -82,6 +93,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="FH6-Xg-DrA"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="vGQ-ot-Buo" id="loZ-PL-ewh"/>
+                        <outlet property="errorLabel" destination="ar3-rC-n6E" id="h4b-Xo-19s"/>
+                        <outlet property="passwordTextField" destination="SMC-cp-wFf" id="Gim-Qc-7KW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,7 +106,7 @@
         <!--Home View Controller-->
         <scene sceneID="OE3-9K-exJ">
             <objects>
-                <viewController id="VdM-ri-KYI" customClass="HomeViewController" customModule="Bread_financial_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VdM-ri-KYI" customClass="HomeViewController" customModule="Bread_financial_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K22-sy-a3G" customClass="Home">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +158,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucv-Pn-aAM">
                                 <rect key="frame" x="180" y="505" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onClickSignUp:" destination="YNw-h4-gx6" eventType="touchUpInside" id="VVm-Ic-nU0"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB3-PX-RB4">
+                                <rect key="frame" x="100" y="438" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name  *" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45T-1q-Krb">
                                 <rect key="frame" x="65" y="203" width="284" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -153,6 +178,8 @@
                         <constraints>
                             <constraint firstItem="ykZ-Ls-cJf" firstAttribute="top" secondItem="qdc-Y1-XbA" secondAttribute="bottom" constant="25" id="1gf-iW-VyG"/>
                             <constraint firstItem="o1l-bc-6rt" firstAttribute="trailing" secondItem="ykZ-Ls-cJf" secondAttribute="trailing" constant="65" id="3W3-pP-Opn"/>
+                            <constraint firstItem="o1l-bc-6rt" firstAttribute="trailing" secondItem="YB3-PX-RB4" secondAttribute="trailing" constant="100" id="417-T5-sZq"/>
+                            <constraint firstItem="YB3-PX-RB4" firstAttribute="leading" secondItem="o1l-bc-6rt" secondAttribute="leading" constant="100" id="5o3-LT-0xn"/>
                             <constraint firstItem="qdc-Y1-XbA" firstAttribute="leading" secondItem="o1l-bc-6rt" secondAttribute="leading" constant="65" id="5x9-UF-NEV"/>
                             <constraint firstItem="o1l-bc-6rt" firstAttribute="trailing" secondItem="CD1-Vq-iYy" secondAttribute="trailing" constant="65" id="Ifb-F6-fJB"/>
                             <constraint firstItem="CD1-Vq-iYy" firstAttribute="top" secondItem="o1l-bc-6rt" secondAttribute="top" constant="100" id="Jjn-mM-7Wu"/>
@@ -163,6 +190,8 @@
                             <constraint firstItem="o1l-bc-6rt" firstAttribute="bottom" secondItem="ucv-Pn-aAM" secondAttribute="bottom" constant="327" id="aYs-Ji-68j"/>
                             <constraint firstItem="ykZ-Ls-cJf" firstAttribute="leading" secondItem="o1l-bc-6rt" secondAttribute="leading" constant="65" id="bHb-kM-3KF"/>
                             <constraint firstItem="45T-1q-Krb" firstAttribute="top" secondItem="CD1-Vq-iYy" secondAttribute="bottom" constant="25" id="f4W-X3-whO"/>
+                            <constraint firstItem="YB3-PX-RB4" firstAttribute="top" secondItem="ykZ-Ls-cJf" secondAttribute="bottom" constant="83" id="jUm-yp-yNq"/>
+                            <constraint firstItem="ucv-Pn-aAM" firstAttribute="top" secondItem="YB3-PX-RB4" secondAttribute="bottom" constant="46" id="mqv-oB-4k3"/>
                             <constraint firstItem="CD1-Vq-iYy" firstAttribute="leading" secondItem="o1l-bc-6rt" secondAttribute="leading" constant="65" id="oHY-FK-VyG"/>
                             <constraint firstItem="o1l-bc-6rt" firstAttribute="trailing" secondItem="45T-1q-Krb" secondAttribute="trailing" constant="65" id="qDA-CJ-OH3"/>
                             <constraint firstItem="o1l-bc-6rt" firstAttribute="trailing" secondItem="ucv-Pn-aAM" secondAttribute="trailing" constant="180" id="y1W-NP-2Df"/>
@@ -171,6 +200,14 @@
                         <viewLayoutGuide key="safeArea" id="o1l-bc-6rt"/>
                     </view>
                     <navigationItem key="navigationItem" id="JzC-Gz-Ehp"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="qdc-Y1-XbA" id="4UF-li-8j0"/>
+                        <outlet property="errorLabel" destination="YB3-PX-RB4" id="iYF-vH-39y"/>
+                        <outlet property="firstNameTextField" destination="CD1-Vq-iYy" id="QgR-Lm-pGa"/>
+                        <outlet property="lastNameTextField" destination="45T-1q-Krb" id="SNQ-gQ-6Fv"/>
+                        <outlet property="passwordTextField" destination="ykZ-Ls-cJf" id="d3a-oN-sLC"/>
+                        <outlet property="signUpButton" destination="nDU-dC-VIl" id="9D1-8s-H3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXF-ir-se0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
