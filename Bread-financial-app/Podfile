@@ -13,6 +13,7 @@ target 'Bread' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'FirebaseUI/Auth'
 
   # add pods for any other desired Firebase products
 
