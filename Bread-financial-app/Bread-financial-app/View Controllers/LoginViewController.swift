@@ -37,12 +37,13 @@ class LoginViewController: UIViewController {
     @IBAction func onClickLogin(_ sender: UIButton) {
         print("login tapped")
         
-        if emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+        if emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             errorLabel.text = "Please fill in all fields"
         }
         else {
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                 if error != nil {
                     self.errorLabel.text = error!.localizedDescription

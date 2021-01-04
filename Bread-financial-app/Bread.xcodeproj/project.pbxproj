@@ -12,6 +12,7 @@
 		1D17A3E4245CFF5F0065B5F5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17A3E3245CFF5F0065B5F5 /* CalendarViewController.swift */; };
 		1DAEB3232495602800F384F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEB3222495602800F384F8 /* SignUpViewController.swift */; };
 		1DAEB3252495658400F384F8 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEB3242495658400F384F8 /* ForgetPasswordViewController.swift */; };
+		1DCDE7002497201900293ACD /* DesignComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCDE6FE24971FDD00293ACD /* DesignComponents.swift */; };
 		2404611D9851C9991617CC66 /* Pods_Bread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81F6C6362A44567372CD3A7 /* Pods_Bread.framework */; };
 		3702E6412404BC4D00436253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3702E6402404BC4D00436253 /* AppDelegate.swift */; };
 		3702E6432404BC4D00436253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3702E6422404BC4D00436253 /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 		1D17A3E3245CFF5F0065B5F5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		1DAEB3222495602800F384F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1DAEB3242495658400F384F8 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		1DCDE6FE24971FDD00293ACD /* DesignComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignComponents.swift; path = "Bread-financial-app/Helpers/DesignComponents.swift"; sourceTree = SOURCE_ROOT; };
 		3702E63D2404BC4D00436253 /* Bread-financial-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bread-financial-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3702E6402404BC4D00436253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3702E6422404BC4D00436253 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,10 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				1DAEB3222495602800F384F8 /* SignUpViewController.swift */,
-				1D17A3E1245CFE850065B5F5 /* HomeViewController.swift */,
 				3702E6442404BC4D00436253 /* LoginViewController.swift */,
-				1D17A3E3245CFF5F0065B5F5 /* CalendarViewController.swift */,
 				1DAEB3242495658400F384F8 /* ForgetPasswordViewController.swift */,
+				1D17A3E1245CFE850065B5F5 /* HomeViewController.swift */,
+				1D17A3E3245CFF5F0065B5F5 /* CalendarViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -95,6 +97,15 @@
 				3702E64E2404BC4E00436253 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DC4FB0C2495BB80006E354F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1DCDE6FE24971FDD00293ACD /* DesignComponents.swift */,
+			);
+			name = Helpers;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		3702E6342404BC4D00436253 = {
@@ -125,6 +136,7 @@
 				1D17A460245F6CBD0065B5F5 /* Storyboards */,
 				1D17A45F245F6CA50065B5F5 /* View Controllers */,
 				1D17A461245F6CE10065B5F5 /* Supporting Files */,
+				1DC4FB0C2495BB80006E354F /* Helpers */,
 			);
 			path = "Bread-financial-app";
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DCDE7002497201900293ACD /* DesignComponents.swift in Sources */,
 				1DAEB3232495602800F384F8 /* SignUpViewController.swift in Sources */,
 				1D17A3E4245CFF5F0065B5F5 /* CalendarViewController.swift in Sources */,
 				1D17A3E2245CFE850065B5F5 /* HomeViewController.swift in Sources */,

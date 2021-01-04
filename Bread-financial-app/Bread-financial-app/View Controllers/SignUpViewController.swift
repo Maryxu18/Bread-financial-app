@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import FirebaseAuth
-import FirebaseFirestore
+import Firebase
 
 class SignUpViewController: UIViewController {
 
@@ -30,9 +29,7 @@ class SignUpViewController: UIViewController {
             
             return "Please fill in all fields"
         }
-        
         //check if the email is valid: checkout https://www.youtube.com/watch?v=1HN7usMROt8 at ~50min... (use regular expressions to match email format"
-        
         return nil
     }
     
@@ -63,13 +60,20 @@ class SignUpViewController: UIViewController {
                 else {
                     //user created successfully
                     let db = Firestore.firestore()
-                    
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid":result!.user.uid]) { (error) in
+                
+                db.collection("users").document(result!.user.uid).setData(["firstname":firstName, "lastname":lastName, "categories":[]]) { (error) in
                         
                         if error != nil {
                             self.errorLabel.text = error!.localizedDescription
                         }
                     }
+                    
+//                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid":result!.user.uid, "categories":{}]) { (error) in
+//
+//                        if error != nil {
+//                            self.errorLabel.text = error!.localizedDescription
+//                        }
+//                    }
                     //transition back to login page
                     self.transitionToLogin()
                 }
